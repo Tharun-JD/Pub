@@ -4,6 +4,8 @@
 .ev-preview {
   background: #000000;
   padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .ev-header {
@@ -16,6 +18,8 @@
   background: #000000;
   min-height: 100vh;
   padding-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
 }
 
 /* ── Hero ── */
@@ -27,6 +31,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #000000;
 }
 
 .ev-hero__bg {

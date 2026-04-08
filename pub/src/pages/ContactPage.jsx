@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import heroPubImg from '../assets/hero_pub.png';
 import { useState, useEffect } from 'react';
+import CornerLights from '../components/CornerLights';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -19,9 +20,11 @@ const ContactPage = () => {
   return (
     <div className="contact-page">
       <Navbar />
+      <CornerLights />
       
       {/* Contact Hero */}
       <section className="contact-hero">
+        <CornerLights />
         <div className="contact-hero__bg" style={{ backgroundImage: `url(${heroPubImg})` }} />
         <div className="contact-hero__overlay" />
         <div className="contact-hero__content">

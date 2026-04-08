@@ -2,6 +2,8 @@
 .gallery-section {
   background: #000000;
   padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-section__header {
@@ -18,6 +20,8 @@
 .gallery-page-cnt {
   background: #000000;
   padding-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Full Page Hero */

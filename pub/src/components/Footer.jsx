@@ -1,8 +1,10 @@
+import CornerLights from './CornerLights';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer id="contact" className="footer">
+      <CornerLights />
       {/* Contact Band */}
       <div className="footer__contact">
         <div className="footer__contact-inner">

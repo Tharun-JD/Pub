@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import heroPub from '../assets/hero_pub.png';
+import CornerLights from './CornerLights';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section id="home" className="hero">
+      <CornerLights />
       <div
         className="hero__bg"
         style={{ backgroundImage: `url(${heroPub})` }}

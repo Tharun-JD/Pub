@@ -5,6 +5,7 @@ import cocktailImg from '../assets/cocktail.png';
 import craftBeerImg from '../assets/craft_beer.png';
 import pubSnacksImg from '../assets/pub_snacks.png';
 import heroPubImg from '../assets/hero_pub.png';
+import CornerLights from './CornerLights';
 import './MenuSection.css';
 
 /* ── DATA ── */
@@ -152,6 +153,7 @@ const MenuSection = ({ previewOnly, forceExpanded }) => {
   if (previewOnly && !isExpanded) {
     return (
       <section id="menu" className="mn-section">
+        <CornerLights />
         <div className="mn-header">
           <span className="section__tag">Taste of <span className="brand-manor">Manor</span></span>
           <h2 className="section__title">Menu Preview</h2>
@@ -182,6 +184,7 @@ const MenuSection = ({ previewOnly, forceExpanded }) => {
 
   return (
     <section id="menu" className="mn-section">
+      <CornerLights />
       {/* Header */}
       <div className="mn-header">
         <span className="section__tag">Crafted for You</span>

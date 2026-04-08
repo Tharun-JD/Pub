@@ -6,6 +6,7 @@ import eventNightImg from '../assets/event_night.png';
 import cocktailImg from '../assets/cocktail.png';
 import pubSnacksImg from '../assets/pub_snacks.png';
 import craftBeerImg from '../assets/craft_beer.png';
+import CornerLights from './CornerLights';
 import './Gallery.css';
 
 const photos = [
@@ -28,6 +29,7 @@ const Gallery = ({ previewOnly = false }) => {
 
   return (
     <section id="gallery" className={previewOnly ? "gallery-section" : "gallery-page-cnt"}>
+      <CornerLights />
       {!previewOnly && (
         <div className="gallery-hero">
           <div className="gallery-hero__bg" style={{ backgroundImage: `url(${heroPubImg})` }} />

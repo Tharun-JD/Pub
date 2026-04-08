@@ -4,6 +4,7 @@ import MenuPage from './pages/MenuPage';
 import EventsPage from './pages/EventsPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
+import CornerLights from './components/CornerLights';
 import './index.css';
 
 function App() {

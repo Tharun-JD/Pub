@@ -1,7 +1,14 @@
 /* ── HIGHLIGHTS ── */
 .highlights {
-  background: #000000;
+  background: transparent;
   padding: 6rem 2rem;
+  position: relative;
+}
+
+.highlights__header, 
+.highlights__grid {
+  position: relative;
+  z-index: 1;
 }
 
 .highlights__header {

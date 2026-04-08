@@ -1,6 +1,7 @@
 import liveMusicImg from '../assets/live_music.png';
 import eventNightImg from '../assets/event_night.png';
 import heroPubImg from '../assets/hero_pub.png';
+import CornerLights from './CornerLights';
 import './Highlights.css';
 
 const cards = [
@@ -30,6 +31,7 @@ const cards = [
 const Highlights = () => {
   return (
     <section className="highlights" id="highlights">
+      <CornerLights />
       <div className="highlights__header">
         <span className="section__tag">Our Offerings</span>
         <h2 className="section__title">Experience <span className="brand-manor">Manor</span></h2>

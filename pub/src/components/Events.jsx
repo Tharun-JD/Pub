@@ -4,6 +4,7 @@ import liveMusicImg from '../assets/live_music.png';
 import eventNightImg from '../assets/event_night.png';
 import gallery1Img from '../assets/gallery1.png';
 import cocktailImg from '../assets/cocktail.png';
+import CornerLights from './CornerLights';
 import './Events.css';
 
 /* ── DATA ── */
@@ -47,6 +48,7 @@ const Events = ({ previewOnly, forceExpanded }) => {
   if (previewOnly && !forceExpanded) {
     return (
       <section id="events" className="ev-preview">
+        <CornerLights />
         <div className="ev-header">
           <span className="section__tag">Experience Manor</span>
           <h2 className="section__title">Events at <span className="brand-manor">Manor</span></h2>
@@ -85,6 +87,7 @@ const Events = ({ previewOnly, forceExpanded }) => {
     <div className="ev-page">
       {/* Hero */}
       <section className="ev-hero">
+        <CornerLights />
         <div className="ev-hero__bg" style={{ backgroundImage: `url(${eventNightImg})` }} />
         <div className="ev-hero__overlay" />
         <div className="ev-hero__content">

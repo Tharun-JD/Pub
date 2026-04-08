@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #000000;
 }
 
 .hero__bg {

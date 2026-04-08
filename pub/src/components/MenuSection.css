@@ -2,6 +2,8 @@
 .mn-section {
   background: #000000;
   padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .mn-header {
