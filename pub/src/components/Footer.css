@@ -2,6 +2,8 @@
 .footer {
   background: #000000;
   border-top: 1px solid rgba(212, 175, 55, 0.2);
+  position: relative;
+  overflow: hidden;
 }
 
 /* Contact Band */

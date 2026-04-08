@@ -4,6 +4,8 @@
   color: #F8F6F3;
   min-height: 100vh;
   padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Hero Section */
