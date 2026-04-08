@@ -1,0 +1,137 @@
+/* ── NAVBAR ── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: transparent;
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+  box-sizing: border-box;
+}
+
+.navbar--scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.25);
+}
+
+.navbar__logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8B3A3A;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-shadow: 0 0 20px rgba(139, 58, 58, 0.4);
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #F8F6F3;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+  display: inline-block;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #B33D3D;
+  transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-50%);
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(179, 61, 61, 0.4);
+}
+
+.navbar__link:hover {
+  color: #B33D3D;
+  transform: translateY(-3px);
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* CTA Highlight (Contact Button) */
+.navbar__link--cta {
+  border: 1.5px solid #D4AF37;
+  padding: 0.6rem 1.4rem !important;
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
+
+.navbar__link--cta:hover {
+  background: #B33D3D;
+  border-color: #B33D3D;
+  color: #F8F6F3 !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 5px 20px rgba(179, 61, 61, 0.4);
+}
+
+.navbar__link--cta::after {
+  display: none; /* Hide the standard underline for the CTA button */
+}
+
+/* Hamburger */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar__hamburger span {
+  width: 26px;
+  height: 2px;
+  background: #D4AF37;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar__hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar__hamburger.open span:nth-child(2) { opacity: 0; }
+.navbar__hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+  .navbar { padding: 1.2rem 1.5rem; }
+  .navbar__hamburger { display: flex; }
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(139, 58, 58, 0.97);
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  .navbar__links--open { display: flex; }
+}
