@@ -43,8 +43,11 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
-          <div className="footer__logo"><span className="brand-manor">Manor</span></div>
-          <p className="footer__copy">© 2025 Manor. All rights reserved.</p>
+          <div className="footer__logo">
+            <span className="brand-manor">Manor</span>
+            <span className="brand-subtext">by Parvi</span>
+          </div>
+          <p className="footer__copy">© 2025 Manor by Parvi. All rights reserved.</p>
           <div className="footer__socials">
             <a href="#" className="footer__social-link" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

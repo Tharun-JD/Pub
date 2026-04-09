@@ -21,7 +21,10 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled || isSubPage ? 'navbar--scrolled' : ''}`}>
-      <div className="navbar__logo"><span className="brand-manor">Manor</span></div>
+      <Link to="/" className="navbar__logo">
+        <span className="brand-manor">Manor</span>
+        <span className="brand-subtext">by Parvi</span>
+      </Link>
       <button
         className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
         onClick={() => setMenuOpen(!menuOpen)}

@@ -7,21 +7,18 @@ import './Highlights.css';
 const cards = [
   {
     img: liveMusicImg,
-    icon: '🎸',
     title: 'Live Music',
     desc: 'Every Friday & Saturday night. Local artists bring the soul of Manor alive with acoustic sets and soulful performances.',
     tag: 'Fri & Sat · 8PM',
   },
   {
     img: heroPubImg,
-    icon: '🥂',
     title: 'Happy Hours',
     desc: 'Unwind with handcrafted cocktails and premium draughts at our exclusive happy hour deals. The best time to visit.',
     tag: 'Daily · 4PM – 7PM',
   },
   {
     img: eventNightImg,
-    icon: '✨',
     title: 'Special Events',
     desc: 'From themed evenings to private dinners, Manor hosts unforgettable experiences tailored to make every moment count.',
     tag: 'Monthly Events',
@@ -45,7 +42,6 @@ const Highlights = () => {
               <div className="highlight-card__img-overlay" />
             </div>
             <div className="highlight-card__body">
-              <div className="highlight-card__icon">{card.icon}</div>
               <h3 className="highlight-card__title">{card.title}</h3>
               <p className="highlight-card__desc">{card.desc}</p>
               <span className="highlight-card__tag">{card.tag}</span>

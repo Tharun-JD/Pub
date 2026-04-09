@@ -27,8 +27,8 @@ const eventsList = [
 ];
 
 const weeklyOffers = [
-  { title: 'Happy Hours', subtitle: '5 PM – 7 PM', desc: 'Unwind with premium draughts and classic cocktails at half the price.', icon: '🍺' },
-  { title: 'Buy 1 Get 1 Free', subtitle: 'All Day Monday', desc: 'Start your week right with our exclusive B1G1 deal on select spirits.', icon: '🥂' },
+  { title: 'Happy Hours', subtitle: '5 PM – 7 PM', desc: 'Unwind with premium draughts and classic cocktails at half the price.' },
+  { title: 'Buy 1 Get 1 Free', subtitle: 'All Day Monday', desc: 'Start your week right with our exclusive B1G1 deal on select spirits.' },
 ];
 
 /* ── MAIN COMPONENT ── */
@@ -144,7 +144,6 @@ const Events = ({ previewOnly, forceExpanded }) => {
         <div className="ev-offers__grid">
           {weeklyOffers.map((offer, i) => (
             <div className="offer-card" key={i}>
-              <div className="offer-card__icon">{offer.icon}</div>
               <div className="offer-card__content">
                 <h4 className="offer-card__title">{offer.title}</h4>
                 <p className="offer-card__subtitle">{offer.subtitle}</p>

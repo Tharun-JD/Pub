@@ -66,6 +66,9 @@
 }
 
 .footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-weight: 700;
